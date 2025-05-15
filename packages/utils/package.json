@@ -1,0 +1,11 @@
+{
+  "name": "@pokedox/utils",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.json --module commonjs"
+  }
+}

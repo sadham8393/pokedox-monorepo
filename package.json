@@ -1,25 +1,21 @@
 {
-  "name": "pokedox-monorepo",
-  "version": "0.1.0",
+  "name": "root",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.2"
-  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.2",
-    "@eslint/eslintrc": "^3"
+    "lerna": "^8.2.2"
+  },
+  "scripts": {
+    "clean": "lerna clean --yes && lerna exec -- rm -rf node_modules dist .next",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --stream",
+    "dev": "lerna run dev --parallel --stream",
+    "start": "lerna run start --parallel --stream",
+    "lint": "lerna run lint --stream",
+    "storybook:components": "npm run storybook --workspace=packages/components"
   }
 }
