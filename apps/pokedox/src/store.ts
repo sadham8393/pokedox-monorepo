@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { createWrapper } from 'next-redux-wrapper';
 
-import pokemonListReducer from "./slices/pokemonListSlice";
+import pokemonListReducer from './slices/pokemonListSlice';
 
 export const makeStore = () =>
   configureStore({

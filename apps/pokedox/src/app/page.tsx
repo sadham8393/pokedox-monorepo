@@ -1,6 +1,6 @@
-"use client";
-import { Box } from "@mui/material";
-import PokemonListPage from "../components/pokemon-list";
+'use client';
+import { Box } from '@mui/material';
+import PokemonListPage from '../components/pokemon-list';
 
 export default function Home() {
   return (

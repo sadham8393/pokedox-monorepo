@@ -34,7 +34,7 @@ export const fetchPokemonList = createAsyncThunk(
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${pageSize}`);
     if (!res.ok) throw new Error('Failed to fetch Pokémon');
     return await res.json();
-  }
+  },
 );
 
 const pokemonListSlice = createSlice({
