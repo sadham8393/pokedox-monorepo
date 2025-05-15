@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Pokedox Monorepo App",
-  description: "Pokedox Monorepo App",
+  description: "Pokedox Monorepo App using Lerna and Next.js",
 };
 
 export default function RootLayout({
