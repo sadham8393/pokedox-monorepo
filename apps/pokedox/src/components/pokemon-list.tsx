@@ -34,6 +34,7 @@ export default function PokemonListPage() {
         onPaginationModelChange={(model) => dispatch(setPage(model.page))}
         onRowClick={(params) => router.push(`/pokemon/${results[Number(params.id)].name}`)}
         disableRowSelectionOnClick
+        pageSizeOptions={[10, 20, 50]}
       />
       {error && <div style={{ color: 'red' }}>{error}</div>}
     </div>

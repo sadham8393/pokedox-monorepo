@@ -6,6 +6,8 @@
   "private": false,
   "license": "MIT",
   "scripts": {
-    "build": "tsc --project tsconfig.json && tsc --project tsconfig.json --module commonjs"
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.json --module commonjs",
+    "test": "jest --config jest.config.js",
+    "coverage": "jest --config jest.config.js --coverage"
   }
 }

@@ -65,6 +65,22 @@ docker build -t pokedox-monorepo .
 docker run -p 3000:3000 pokedox-monorepo
 ```
 
+## Testing
+Run all tests for apps and packages:
+```sh
+npm test
+```
+
+Run tests for a specific workspace (e.g., the main app):
+```sh
+npm test --workspace=apps/pokedox
+```
+
+Run tests with coverage:
+```sh
+npm run coverage --workspace=apps/pokedox
+```
+
 ## Technologies Used
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
